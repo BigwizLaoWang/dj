@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>球队列表</title>
+</head>
+<body>
+<ui>
+    {% for foo in teams %}
+    <a href="/t03/players?tid={{ foo.id }}">
+    <li>{{ foo.name }}</li>
+    </a>
+    {% endfor %}
+
+</ui>
+</body>
+</html>
